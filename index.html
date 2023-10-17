@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title> Momentum </title>
+  <style> </style>
+</head>
+<body> <!-- cmd shift w => wrap 설정, window , + , . 은 이모지 임티 -->
+  <!-- 로그인 -->
+  <form class="hidden" id="login-form">
+    <label for="login-form"> What's your name? </label>
+    <input 
+      required
+      maxlength="15"
+      type="text"
+      placeholder="What is your name?" />
+    <input type="submit" value="Log In" />
+  </form>
+  <!-- // 로그인 -->
+  <h2 id="clock"> 00:00 </h2>
+  <h1 class="hidden" id="greeting" class="greeting"></h1>
+  <div id="quotes">
+    <span> </span>
+    <span> </span>
+  </div>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  
+  <button id="todoBtn"> To Do </button>
+  <div class="todo">
+    <span class="todoCloseBtn"> &times; </span>
+    <h2> Memo </h2>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list">   
+    </ul>
+  </div>
+
+
+  <script src="./js/clock.js"></script>
+  <script src="./js/greeting.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/weather.js"></script>
+
+  <script> 
+
+  </script>
+</body>
+</html>
